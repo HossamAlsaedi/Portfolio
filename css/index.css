@@ -1,0 +1,224 @@
+
+* {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.layout-box {
+    height: 1000px;
+}
+
+.layout{
+    isolation: isolate;
+    width: 100%;
+    height: 3565.6px;
+    background: 
+    radial-gradient(43.19% 17.44% at 85.97% 10.06%, rgba(255, 84, 166, 0.146) 0%, rgba(255, 255, 255, 0) 100%),
+    radial-gradient(87.95% 13.22% at 65.76% 12.59%, rgba(149, 147, 255, 0.146) 0%, rgba(255, 255, 255, 0) 100%),
+    #FCFFFD;
+}
+
+
+.active {
+width: fit-content;
+height: fit-content;
+padding: 7px;
+background: #D8FFF6;
+border-radius: 4px;
+}
+
+.nav-link{
+font-family: 'Inter';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+color: #9EADA9;
+}
+
+
+
+.information {
+    background: none;
+    position: relative;
+    z-index: 2;
+    color: #000;  
+}
+
+
+@media (max-width: 768px) {
+    nav {
+        width: 90% !important;
+    }
+    .about {
+        width: auto !important;
+    }
+
+}
+@media (max-width: 576px) {
+    .information {
+        height: auto !important;
+    }
+
+    .name {
+        font-size: 1.75rem !important;
+    }
+
+    .job-title {
+        font-size: 1.25rem !important;
+    }
+}
+
+
+
+
+.navbar-brand {
+    height: 30px;
+    font-family: 'Bayon';
+    font-weight: 400;
+    font-size: 24px;
+    color: #444552;
+}
+
+nav {
+    width: 70%;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border-radius: 12px; 
+    z-index: 2;
+}
+
+.nav-link:hover {
+    color: #53DEBB;
+}
+
+.nav-link.active {
+    color: inherit !important;
+}
+
+.name {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: calc(2.75rem + 1.5vw);
+    text-transform: uppercase;
+    color: #2D282F;
+}
+
+.job-title {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: #9EADA9;
+}
+
+.about {
+    font-family: 'Inter';
+    color: #576576;
+}
+
+.email {
+    width: fit-content;
+    font-weight: 500;
+    font-family: 'Inter';
+    padding: 8px 10px;
+    border: 1px solid #3FC6A6;
+    border-radius: 8px;
+    color: #3FC6A6;
+}
+
+.email:hover {
+    cursor: pointer;
+    padding: 8px 10px;
+    background: #D8FFF6;
+    color: #53DEBB;
+    border-radius: 8px;
+}
+
+i{
+    height: 32px;
+    width: 32px;
+    font-size: 25px;
+}
+
+.section-title {
+    font-family: 'Inter';
+    font-weight: 900;
+    font-size: 20px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #576576;
+}
+
+.skills-box {
+    align-items: center;
+    padding: 25px;
+    border: 1px solid #53DEBB;
+    filter: drop-shadow(2px 4px 30px #3AB99B);
+    border-radius: 10px;
+}
+
+.skill i{
+    text-align: center;
+    padding: 1px 0px;
+}
+
+.skill {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: fit-content;
+}
+
+.skill span {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 600;
+    color: #53DEBB;
+}
+
+a {
+    text-decoration: none;
+}
+
+.project:not(:first-child) {
+    height: 500px !important;
+}
+
+.project:first-child {
+    min-height: 500px !important;
+}
+
+.Features {
+    font-size: 14px;
+}
+
+.card {
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 2px 15px rgb(0 0 0 / 20%) !important;
+}
+
+
+footer {
+background: #D8FFF6;
+}
+
+
+footer a {
+padding: 8px 10px;
+background: #53DEBB;
+border: 3px solid #C6FFF5;
+border-radius: 8px;
+}
