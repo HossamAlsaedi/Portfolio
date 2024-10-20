@@ -185,6 +185,12 @@ i{
     color: #53DEBB;
 }
 
+.note {
+    font-size: 0.75rem !important;
+    align-items: end;
+}
+
+
 a {
     text-decoration: none;
 }
