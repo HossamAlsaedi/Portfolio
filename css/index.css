@@ -1,4 +1,7 @@
 
+
+/*------------ General section -----------*/
+
 * {
     font-family: sans-serif;
     box-sizing: border-box;
@@ -24,6 +27,16 @@ html, body {
     #FCFFFD;
 }
 
+.section-title {
+    font-family: 'Inter';
+    font-weight: 900;
+    font-size: 20px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #576576;
+}
+
+/*------------ Navigation section -----------*/
 
 .active {
 width: fit-content;
@@ -40,42 +53,6 @@ font-weight: 500;
 font-size: 14px;
 color: #9EADA9;
 }
-
-
-
-.information {
-    background: none;
-    position: relative;
-    z-index: 2;
-    color: #000;  
-}
-
-
-@media (max-width: 768px) {
-    nav {
-        width: 90% !important;
-    }
-    .about {
-        width: auto !important;
-    }
-
-}
-@media (max-width: 576px) {
-    .information {
-        height: auto !important;
-    }
-
-    .name {
-        font-size: 1.75rem !important;
-    }
-
-    .job-title {
-        font-size: 1.25rem !important;
-    }
-}
-
-
-
 
 .navbar-brand {
     height: 30px;
@@ -99,6 +76,21 @@ nav {
 
 .nav-link.active {
     color: inherit !important;
+}
+
+@media (max-width: 768px) {
+    nav {
+        width: 90% !important;
+    }
+}
+
+/*------------ Information section -----------*/
+
+.information {
+    background: none;
+    position: relative;
+    z-index: 2;
+    color: #000;  
 }
 
 .name {
@@ -146,14 +138,29 @@ i{
     font-size: 25px;
 }
 
-.section-title {
-    font-family: 'Inter';
-    font-weight: 900;
-    font-size: 20px;
-    letter-spacing: 0.3em;
-    text-transform: uppercase;
-    color: #576576;
+@media (max-width: 768px) {
+    .about {
+        width: auto !important;
+    }
 }
+
+@media (max-width: 576px) {
+    .information {
+        height: auto !important;
+    }
+
+    .name {
+        font-size: 1.75rem !important;
+    }
+
+    .job-title {
+        font-size: 1.25rem !important;
+    }
+}
+
+
+/*------------ Skills section -----------*/
+
 
 .skills-box {
     align-items: center;
@@ -195,6 +202,8 @@ a {
     text-decoration: none;
 }
 
+/*------------ Portfolio section -----------*/
+
 .project:not(:first-child) {
     height: 500px !important;
 }
@@ -215,6 +224,9 @@ a {
     transform: translateY(-5px);
     box-shadow: 0 2px 15px rgb(0 0 0 / 20%) !important;
 }
+
+
+/*------------ Footer  section -----------*/
 
 
 footer {
