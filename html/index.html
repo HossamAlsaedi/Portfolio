@@ -3,316 +3,393 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="stylesheet" href="../css/all.min.css">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/index.css">
-    <title>Portfolio</title>
+    <script src="../Javascript/index.js"></script>
+    <title>Hossam Alsaedi - Portfolio</title>
+
 </head>
 <body>
-    <!------------ layout section ----------->
-    <div class="layout-box overflow-hidden position-absolute w-100 top-0">
-        <div class="layout position-relative"></div>
+    <!-- Background Decoration -->
+    <div class="bg-decoration">
+        <div class="floating-shape shape1"></div>
+        <div class="floating-shape shape2"></div>
+        <div class="floating-shape shape3"></div>
     </div>
 
-    <!------------ Navigation section ----------->
-    <nav class="container navbar navbar-expand-lg my-3 sticky-top">
-        <div class="container-fluid">
-            <h2 class="navbar-brand">Portfolio</h2>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto column-gap-3">
-                <li class="nav-item my-3 my-lg-0">
-                    <a class="nav-link active" aria-current="page" href="#information">Info</a>
-                </li>
-                <li class="nav-item mb-3 mb-lg-0">
-                    <a class="nav-link" href="#skills">Skills</a>
-                </li>
-                <li class="nav-item mb-3 mb-lg-0">
-                    <a class="nav-link" href="#portfolio">Portfolio</a>
-                </li>
-            </ul>
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#information">Info</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
 
-    <!------------ Information and contact info section ----------->
-    <div class="information container-md d-flex align-items-center h-50 my-5 pb-5" id="information">
-        <div class="info container-md h-auto w-auto my-5">
-            <h1 class="name fw-bolder">
-                Hossam Alsaedi
-            </h1>
-            <div class="job-title">
-                Web Developer - Front End
-            </div>
-            <div class="about w-50 mt-4 fw-normal fs-6">
-                I began learning front-end web development in April 2023, and I currently possess skills in HTML,
-                CSS (with Bootstrap), and JavaScript. Currently focusing on Vue.js
-                and plan to further enhance my knowledge with TypeScript, Sass, and other web development technologies.
-            </div>
-            <div class="contact-info my-3">
-                <a href="mailto:hossamsalsaedi@gmail.com" class="text-decoration-none">
-                    <div class="email my-3 p-2 rounded-2">
-                        <span class="px-2">Contact via email</span>
-                        <img src="../Image/Send.svg" alt="Send Icon">
-                    </div>
-                </a>                
-                <div class="social-links d-flex align-items-center w-25 gap-4">
-                    <div class="icon text-center p-1">
-                        <a href="https://github.com/HossamAlsaedi" target="_blank">
-                            <i class="fa-brands fa-github" style="color: #63E6BE;" title="Github"></i>
-                        </a>
-                    </div>
-                    <div class="icon text-center p-1">
-                        <a href="https://www.linkedin.com/in/hossam-alsaedi-8177b7296/" target="_blank">
-                            <i class="fa-brands fa-linkedin" style="color: #63E6BE;" title="Linkedin"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!------------ Skills section ----------->
-    <div class="skills container d-flex position-relative justify-content-center flex-column align-items-center my-5 py-5" id="skills">
-        <h3 class="section-title text-center my-5">
-            Skills
-        </h3>
-
-        <div class="skills-box container-md d-flex gap-3 flex-wrap my-5 justify-content-center">
-            <div class="skill col-lg-2 col-md-6 col-sm-12">
-                <i class="fa-brands fa-html5" style="color: #e34f26;" title="HTML"></i>
-                <span>HTML</span>
-            </div>
-            <div class="skill col-lg-2 col-md-6 col-sm-12 text-center">
-                <i class="fa-brands fa-css3-alt" style="color: #002561;" title="CSS"></i>
-                <span>CSS</span>
-            </div>
-            <div class="skill col-lg-2 col-md-6 col-sm-12 text-center">
-                <i class="fa-brands fa-js" style="color: #f7df1e;" title="JavaScript"></i>
-                <span>JavaScript</span>
-            </div>
-            <div class="skill col-lg-2 col-md-6 col-sm-12 text-center">
-                <i class="fa-brands fa-bootstrap" style="color: #712cf9;" title="Bootstrap"></i>
-                <span>Bootstrap</span>
-            </div>
-            <div class="skill col-lg-2 col-md-6 col-sm-12 text-center">
-                <img src="../Image/image.png" style="width: 32px;" alt="" title="Responsive design">
-                <span>Responsive design</span>
-            </div>
-            <div class="skill col-lg-2 col-md-6 col-sm-12 text-center">
-                <i class="fa-brands fa-github" title="Github"></i>
-                <span>Github & Git Bash</span>
-            </div>
-            <div class="skill col-lg-2 col-md-6 col-sm-12 text-center">
-                <i class="fa-brands fa-vuejs" style="color: #42b883;" title="Vue.js"></i>
-                <span>Vue.js</span>
-                <span class="note text-black">(Currently learning)</span>
-            </div>
-        </div>
-        
-    </div>
-
-    <!------------ Portfolio section ----------->
-    <div class="Portfolio container position-relative my-5" id="portfolio">
-        <h3 class="section-title text-center my-5">
-            Portfolio
-        </h3>
-        
+    <!-- About Section -->
+    <section class="hero-section" id="information">
         <div class="container">
-            <!-------------- First Row ------------->
-            <div class="row justify-content-center my-5 my-md-2 gap-5 gap-md-0">
-                <!---------- QnA application ----------->
-                <div class="project col-sm-8 col-md-6 col-lg-4 position-relative mb-5">
-                    <div class="card h-100 shadow">
-                        <span class="position-absolute top-0 left-0 z-3 text-bg-warning p-1">In Progress</span>
-                        <div class="card-img-top h-40">
-                            <a href="https://hossamalsaedi.github.io/QnA_Game/#/" target="_blank">
-                            <img src="../Image/QnA.png" alt="" style="width: 100%; height: 100%;">
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Hossam Alsaedi</h1>
+                        <p class="hero-subtitle">IT Support & Web Developer</p>
+                        <p class="hero-description">
+                            I'm a passionate tech enthusiast with hands-on experience in web development and a growing skill set in IT support, Windows administration, and automation. Currently working on certifications like CompTIA A+, MD-102, and ITIL4 to strengthen my position in the IT field. My goal is to combine practical IT support skills with development tools to solve real-world problems.
+                        </p>
+                        <div class="contact-buttons">
+                            <a href="mailto:hossamsalsaedi@gmail.com" class="btn-gradient align-content-center">
+                                <i class="fas fa-envelope me-2"></i>Contact Me
                             </a>
-                        </div>
-                        <div class="card-body h-50">
-                            <div class="card-title d-flex justify-content-between mb-0">
-                                <h4 class="fs-4 fw-bold">Q&A Game</h4> 
-                                <ul class="d-flex list-unstyled">
-                                    <li><i class="fa-brands fa-html5" style="color: #e34f26;" title="HTML"></i></li>
-                                    <li><i class="fa-brands fa-css3-alt" style="color: #002561;" title="CSS"></i></li>
-                                    <li><i class="fa-brands fa-js" style="color: #FFD43B;" title="JavaScript"></i></li>
-                                    <i class="fa-brands fa-vuejs" style="color: #42b883;" title="Vue.js"></i>
-                                    <i class="fa-brands fa-bootstrap" style="color: #712cf9;" title="Bootstrap"></i>
-                                </ul>
+                            <div class="social-links">
+                                <a href="https://github.com/HossamAlsaedi" target="_blank" class="social-link github">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/hossam-alsaedi-8177b7296/" target="_blank" class="social-link linkedin">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
                             </div>
-                            <h5>Features:</h5>
-                            <ul class="Features d-xl-flex flex-wrap p-xl-1">
-                                <li class="col-xl-6">Responsive design</li>
-                                <li class="col-xl-6">Team Management</li>
-                                <li class="col-xl-6">Team Abilities</li>
-                                <li class="col-xl-6">Multiple categories</li>
-                                <li class="col-xl-6">Save Game</li>
-                                <li class="col-xl-6">Points system</li>
-                                <li class="col-xl-6">Animations</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer text-end h-10">
-                            <span class="code mx-4"><a href="https://github.com/HossamAlsaedi/QnA_Game/tree/master" target="_blank">Code</a></span>
-                            <span class="page"><a href="https://hossamalsaedi.github.io/QnA_Game/#/" target="_blank">Page</a></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-------------- Second Row ------------->
-            <div class="row justify-content-center my-5 gap-5 gap-md-0">
-                <!---------- shop application ----------->
-                <div class="project col-sm-8 col-md-6 col-lg-4 ">
-                    <div class="card h-100 shadow">
-                        <div class="card-img-top h-50">
-                            <a href="https://Hossamalsaedi.github.io/Shop-Application/html/" target="_blank">
-                            <img src="../Image/shop.png" alt="" style="width: 100%; height: 100%;">
-                            </a>
-                        </div>
-                        <div class="card-body h-50">
-                            <div class="card-title d-flex justify-content-between mb-0">
-                                <h4 class="fs-4 fw-bold">Shop Application</h4> 
-                                <ul class="d-flex list-unstyled">
-                                    <li><i class="fa-brands fa-html5" style="color: #e34f26;" title="HTML"></i></li>
-                                    <li><i class="fa-brands fa-css3-alt" style="color: #002561;" title="CSS"></i></li>
-                                    <li><i class="fa-brands fa-js" style="color: #FFD43B;" title="JavaScript"></i></li>
-                                </ul>
-                            </div>
-                            <h5>Features:</h5>
-                            <ul class="Features d-xl-flex flex-wrap p-xl-1">
-                                <li class="col-xl-6">Responsive design</li>
-                                <li class="col-xl-6">Product Management</li>
-                                <li class="col-xl-6">Account Management</li>
-                                <li class="col-xl-6">Cart Management</li>
-                                <li class="col-xl-6">Currency API</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer text-end h-10">
-                            <span class="code mx-4"><a href="https://github.com/HossamAlsaedi/Shop-Application" target="_blank">Code</a></span>
-                            <span class="page"><a href="https://Hossamalsaedi.github.io/Shop-Application/html/" target="_blank">Page</a></span>
-                        </div>
-                    </div>
-                </div>
-                <!---------- PDF Editor ----------->
-                <div class="project col-sm-8 col-md-6 col-lg-4">
-                    <div class="card h-100 shadow">
-                        <div class="card-img-top h-50">
-                            <a href="https://hossamalsaedi.github.io/PDF-Editor/" target="_blank">
-                            <img src="../Image/pdf-editor.jpg" alt="" style="width: 100%; height: 100%;">
-                            </a>
-                        </div>
-                        <div class="card-body h-50">
-                            <div class="card-title d-flex justify-content-between mb-0">
-                                <h4 class="fs-4 fw-bold">PDF Editor</h4> 
-                                <ul class="d-flex list-unstyled">
-                                    <li><i class="fa-brands fa-html5" style="color: #e34f26;" title="HTML"></i></li>
-                                    <li><i class="fa-brands fa-css3-alt" style="color: #002561;" title="CSS"></i></li>
-                                    <li><i class="fa-brands fa-js" style="color: #FFD43B;" title="JavaScript"></i></li>
-                                </ul>
-                            </div>
-                            <h5>Features:</h5>
-                            <ul class="Features d-xl-flex flex-wrap p-xl-1">
-                                <li class="col-xl-6">Responsive design</li>
-                                <li class="col-xl-6">Merging pages</li>
-                                <li class="col-xl-6">Merging files</li>
-                                <li class="col-xl-6">Convert image to PDF</li>
-                                <li class="col-xl-6">Rearrange pages</li>
-                                <li class="col-xl-6">Split PDF pages</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer text-end h-10">
-                            <span class="code mx-4"><a href="https://github.com/HossamAlsaedi/PDF-Editor" target="_blank">Code</a></span>
-                            <span class="page"><a href="https://hossamalsaedi.github.io/PDF-Editor/" target="_blank">Page</a></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-------------- Third Row ------------->
-            <div class="row justify-content-center my-5 gap-5 gap-md-0">
-                <!---------- Animation Page ----------->
-                <div class="project col-sm-8 col-md-6 col-lg-4">
-                    <div class="card h-100 shadow">
-                        <div class="card-img-top h-40">
-                            <a href="https://Hossamalsaedi.github.io/Animation/html/animation.html" target="_blank">
-                                <img src="../Image/Animation-site.png" alt="" style="width: 100%;">
-                            </a>
-                        </div>
-                        <div class="card-body h-50">
-                            <div class="card-title d-flex justify-content-between">
-                                <h4 class="fs-4 fw-bold">Animation</h4> 
-                                <ul class="d-flex list-unstyled">
-                                    <li><i class="fa-brands fa-html5" style="color: #e34f26;" title="HTML"></i></li>
-                                    <li><i class="fa-brands fa-css3-alt" style="color: #002561;" title="CSS"></i></li>
-                                    <li><i class="fa-brands fa-js" style="color: #FFD43B;" title="JavaScript"></i></li>
-                                </ul>
-                            </div>
-                            <h5>Features:</h5>
-                            <ul class="Features">
-                                <li>Responsive design</li>
-                                <li>Hover animations on cards</li>
-                                <li>Scroll-triggered progress and effects</li>
-                            </ul>
-                        </div>
-                        <div class="card-footer text-end h-10">
-                            <span class="code mx-4"><a href="https://github.com/HossamAlsaedi/Animation" target="_blank">Code</a></span>
-                            <span class="page"><a href="https://Hossamalsaedi.github.io/Animation/html/animation.html" target="_blank">Page</a></span>
-                        </div>
-                    </div>
-                </div>
-                <!---------- First Bootstrap page ----------->
-                <div class="project col-sm-8 col-md-6 col-lg-4">
-                    <div class="card h-100 shadow">
-                        <div class="card-img-top h-40 w-100">
-                            <a href="https://Hossamalsaedi.github.io/bootstrap_template/html/bondi.html" target="_blank">
-                                <img src="../Image/Bootstrap-site.png" alt="" style="width: 100%;">
-                            </a>
-                        </div>
-                        <div class="card-body h-50">
-                            <div class="card-title d-flex justify-content-between">
-                                <h4 class="fs-4 fw-bold">Bootstrap</h4>
-                                <ul class="d-flex list-unstyled">
-                                    <li><i class="fa-brands fa-bootstrap" style="color: #712cf9;" title="Bootstrap"></i></li>
-                                    <li><i class="fa-brands fa-html5" style="color: #e34f26;" title="HTML"></i></li>
-                                    <li><i class="fa-brands fa-css3-alt" style="color: #002561;" title="CSS"></i></li>
-                                </ul>
-                            </div>
-                            <h5>Features:</h5>
-                            <ul class="Features">
-                                <li>Responsive design</li>
-                                <li>Hover animations on portfolio images</li>                                
-                            </ul>
-                        </div>
-                        <div class="card-footer text-end h-10">
-                            <span class="code mx-4"><a href="https://github.com/HossamAlsaedi/bootstrap_template" target="_blank">Code</a></span>
-                            <span class="page"><a href="https://Hossamalsaedi.github.io/bootstrap_template/html/bondi.html" target="_blank">Page</a></span>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-        
-    </div>
+    </section>
 
-    <!------------ Footer section ----------->
-    <footer class="w-100 h-auto text-center mt-5 py-2">
-        <span class="py-2 fs-6">
-            This page was made with
-            <ul class="d-flex list-unstyled justify-content-center">
-                <li><i class="fa-brands fa-html5" style="color: #e34f26;" title="HTML"></i></li>
-                <li><i class="fa-brands fa-bootstrap" style="color: #712cf9;" title="Bootstrap"></i></li>
-                <li><i class="fa-brands fa-css3-alt" style="color: #002561;" title="CSS"></i></li>
-                <li><i class="fa-brands fa-js" style="color: #FFD43B;" title="JavaScript"></i></li>
-            </ul>
-        </span>
-        <p class="m-0 pb-1 fs-6">The design has been taken from 
-            <a href="https://www.figma.com/community/file/1370224578165700300/portfolio-2024" target="_blank" class="text-white">Figma</a>
-        </p>
+    <!-- Skills Section -->
+    <section class="section" id="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills & Certifications</h2>
+            <div class="section-content">
+                <!-- IT Support Skills -->
+                <div class="skills-category it">
+                    <h5><i class="fas fa-tools me-2"></i>IT & Support Knowledge</h5>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fa-solid fa-computer" style="color: #4facfe;"></i>
+                            <span>Computer Setup & OS Installation</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-plug" style="color: #43e97b;"></i>
+                            <span>Device Configuration</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-file-word" style="color: #2B579A;"></i>
+                            <span>Microsoft Word</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-file-powerpoint" style="color: #B7472A;"></i>
+                            <span>Microsoft PowerPoint</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-file-excel" style="color: #217346;"></i>
+                            <span>Microsoft Excel</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-terminal" style="color: #667eea;"></i>
+                            <span>Windows CMD</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-network-wired" style="color: #fa709a;"></i>
+                            <span>Basic Networking</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-user-cog" style="color: #764ba2;"></i>
+                            <span>User Account Management</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Development Skills -->
+                <div class="skills-category web">
+                    <h5><i class="fas fa-code me-2"></i>Web Development</h5>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fa-brands fa-html5" style="color: #e34f26;"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-brands fa-css3-alt" style="color: #1572b6;"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-brands fa-js" style="color: #f7df1e;"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-brands fa-bootstrap" style="color: #712cf9;"></i>
+                            <span>Bootstrap</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-mobile-screen-button" style="color: #43e97b;"></i>
+                            <span>Responsive Design</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-brands fa-github" style="color: #333;"></i>
+                            <span>Git & GitHub</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-brands fa-vuejs" style="color: #42b883;"></i>
+                            <span>Vue.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certifications -->
+                <div class="skills-category cert">
+                    <h5><i class="fas fa-certificate me-2"></i>Certifications</h5>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fa-solid fa-certificate" style="color: #4285f4;"></i>
+                            <span>Google IT Support ✅</span>
+                                  <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/8UJ2Q0NMK5UI" target="_blank" class="verify-badge">
+                                    <i class="fas fa-shield-check"></i> Verified
+                                  </a>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-book-open-reader" style="color: #ff6b6b;"></i>
+                            <span>CompTIA A+ (Studying)</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-shield-halved" style="color: #00d4aa;"></i>
+                            <span>MD-102 (Planned)</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-layer-group" style="color: #845ec2;"></i>
+                            <span>ITIL 4 Foundation (Planned)</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-file-word" style="color: #2B579A;"></i>
+                            <span>MOS Associate (Planned)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="section" id="portfolio">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="portfolio-grid">
+
+                <!-- PDF Editor -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="../Image/pdf-editor.jpg" alt="PDF Editor">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">PDF Editor</h3>
+                        <div class="tech-stack">
+                            <i class="fa-brands fa-html5" style="color: #e34f26;"></i>
+                            <i class="fa-brands fa-css3-alt" style="color: #1572b6;"></i>
+                            <i class="fa-brands fa-js" style="color: #f7df1e;"></i>
+                        </div>
+                        <p class="project-description">
+                            <strong>Why I built this:</strong> Most free PDF tools are limited or require sketchy software — so I created a clean, browser-based solution. Lightweight editor for combining, splitting, and converting PDFs without uploading sensitive documents online.
+                        </p>
+                        <div class="project-features">
+                            <h6>Features:</h6>
+                            <ul class="features-list">
+                                <li>Responsive Design</li>
+                                <li>Merging Pages</li>
+                                <li>Merging Files</li>
+                                <li>Convert Image to PDF</li>
+                                <li>Rearrange Pages</li>
+                                <li>Split PDF Pages</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/HossamAlsaedi/PDF-Editor" target="_blank" class="project-link code">
+                                <i class="fab fa-github me-2"></i>View Code
+                            </a>
+                            <a href="https://hossamalsaedi.github.io/PDF-Editor/" target="_blank" class="project-link demo">
+                                <i class="fas fa-external-link-alt me-2"></i>Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- QnA Game -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <span class="status-badge">In Progress</span>
+                        <img src="../Image/QnA.png" alt="QnA Game">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Q&A Game</h3>
+                        <div class="tech-stack">
+                            <i class="fa-brands fa-html5" style="color: #e34f26;"></i>
+                            <i class="fa-brands fa-css3-alt" style="color: #1572b6;"></i>
+                            <i class="fa-brands fa-js" style="color: #f7df1e;"></i>
+                            <i class="fa-brands fa-vuejs" style="color: #42b883;"></i>
+                            <i class="fa-brands fa-bootstrap" style="color: #712cf9;"></i>
+                        </div>
+                        <p class="project-description">
+                            <strong>Why I built this:</strong> I noticed my friends were paying for limited quiz games online — so I built a free, customizable alternative that we could use together. This web-based quiz game allows multiplayer interaction with custom team management, question categories, and scoring.
+                        </p>
+                        <div class="project-features">
+                            <h6>Features:</h6>
+                            <ul class="features-list">
+                                <li>Responsive Design</li>
+                                <li>Team Management</li>
+                                <li>Team Abilities</li>
+                                <li>Multiple Categories</li>
+                                <li>Save Game</li>
+                                <li>Points System</li>
+                                <li>Animations</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/HossamAlsaedi/QnA_Game/tree/master" target="_blank" class="project-link code">
+                                <i class="fab fa-github me-2"></i>View Code
+                            </a>
+                            <a href="https://hossamalsaedi.github.io/QnA_Game/#/" target="_blank" class="project-link demo">
+                                <i class="fas fa-external-link-alt me-2"></i>Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shop Application -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="../Image/shop.png" alt="Shop Application">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Shop Application</h3>
+                        <div class="tech-stack">
+                            <i class="fa-brands fa-html5" style="color: #e34f26;"></i>
+                            <i class="fa-brands fa-css3-alt" style="color: #1572b6;"></i>
+                            <i class="fa-brands fa-js" style="color: #f7df1e;"></i>
+                        </div>
+                        <p class="project-description">
+                            A complete e-commerce solution with product management, user accounts, and shopping cart functionality. Features currency conversion and responsive design.
+                        </p>
+                        <div class="project-features">
+                            <h6>Features:</h6>
+                            <ul class="features-list">
+                                <li>Responsive Design</li>
+                                <li>Product Management</li>
+                                <li>Account Management</li>
+                                <li>Cart Management</li>
+                                <li>Currency API</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/HossamAlsaedi/Shop-Application" target="_blank" class="project-link code">
+                                <i class="fab fa-github me-2"></i>View Code
+                            </a>
+                            <a href="https://Hossamalsaedi.github.io/Shop-Application/html/" target="_blank" class="project-link demo">
+                                <i class="fas fa-external-link-alt me-2"></i>Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Animation Page -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="../Image/Animation-site.png" alt="Animation Site">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Animation</h3>
+                        <div class="tech-stack">
+                            <i class="fa-brands fa-html5" style="color: #e34f26;"></i>
+                            <i class="fa-brands fa-css3-alt" style="color: #1572b6;"></i>
+                            <i class="fa-brands fa-js" style="color: #f7df1e;"></i>
+                        </div>
+                        <p class="project-description">
+                            A showcase of modern CSS animations and JavaScript effects. Features smooth transitions, hover animations, and scroll-triggered effects.
+                        </p>
+                        <div class="project-features">
+                            <h6>Features:</h6>
+                            <ul class="features-list">
+                                <li>Responsive Design</li>
+                                <li>Hover Animations</li>
+                                <li>Scroll-triggered Progress</li>
+                                <li>Smooth Transitions</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/HossamAlsaedi/Animation" target="_blank" class="project-link code">
+                                <i class="fab fa-github me-2"></i>View Code
+                            </a>
+                            <a href="https://Hossamalsaedi.github.io/Animation/html/animation.html" target="_blank" class="project-link demo">
+                                <i class="fas fa-external-link-alt me-2"></i>Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bootstrap Template -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="../Image/Bootstrap-site.png" alt="Bootstrap Template">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Bootstrap Template</h3>
+                        <div class="tech-stack">
+                            <i class="fa-brands fa-bootstrap" style="color: #712cf9;"></i>
+                            <i class="fa-brands fa-html5" style="color: #e34f26;"></i>
+                            <i class="fa-brands fa-css3-alt" style="color: #1572b6;"></i>
+                        </div>
+                        <p class="project-description">
+                            A modern, responsive website template built with Bootstrap. Features clean design, smooth animations, and mobile-first approach.
+                        </p>
+                        <div class="project-features">
+                            <h6>Features:</h6>
+                            <ul class="features-list">
+                                <li>Responsive Design</li>
+                                <li>Bootstrap Components</li>
+                                <li>Hover Animations</li>
+                                <li>Clean Layout</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/HossamAlsaedi/bootstrap_template" target="_blank" class="project-link code">
+                                <i class="fab fa-github me-2"></i>View Code
+                            </a>
+                            <a href="https://Hossamalsaedi.github.io/bootstrap_template/html/bondi.html" target="_blank" class="project-link demo">
+                                <i class="fas fa-external-link-alt me-2"></i>Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>This page was made with the help of AI</p>
+            <div class="footer-tech">
+                <i class="fa-brands fa-html5" style="color: #e34f26;"></i>
+                <i class="fa-brands fa-bootstrap" style="color: #712cf9;"></i>
+                <i class="fa-brands fa-css3-alt" style="color: #1572b6;"></i>
+                <i class="fa-brands fa-js" style="color: #f7df1e;"></i>
+            </div>
+        </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
-<script src="../Javascript/bootstrap.bundle.min.js"></script>
-<script src="../Javascript/index.js"></script>
 </html>
