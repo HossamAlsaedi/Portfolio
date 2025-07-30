@@ -234,12 +234,47 @@
     <section class="section" id="portfolio">
         <div class="container">
             <h2 class="section-title">My Projects</h2>
-            <div class="portfolio-grid">
+            <div class="portfolio-grid" id="portfolioGrid">
+
+                <!-- QR Reader -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="/Image/QR-reader.jpg" alt="">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">QR Reader</h3>
+                        <div class="tech-stack">
+                            <i class="fa-brands fa-html5" style="color: #e34f26;"></i>
+                            <i class="fa-brands fa-css3-alt" style="color: #1572b6;"></i>
+                            <i class="fa-brands fa-js" style="color: #f7df1e;"></i>
+                        </div>
+                        <p class="project-description">
+                            <strong>Why I built this:</strong> 
+                            Most QR code readers rely on a camera or online tools, which isn’t always practical or secure.
+                            I needed a quick way to scan QR codes from images on my desktop — so I built a private, lightweight tool that works offline without uploading anything.
+                        </p>
+                        <div class="project-features">
+                            <h6>Features:</h6>
+                            <ul class="features-list">
+                                <li>Reading QR code</li>
+                                <li>Responsive Design</li>
+                            </ul>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/HossamAlsaedi/QR-reader" target="_blank" class="project-link code">
+                                <i class="fab fa-github me-2"></i>View Code
+                            </a>
+                            <a href="https://hossamalsaedi.github.io/QR-reader/" target="_blank" class="project-link demo">
+                                <i class="fas fa-external-link-alt me-2"></i>Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- PDF Editor -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="../Image/pdf-editor.jpg" alt="PDF Editor">
+                        <img src="/Image/pdf-editor.jpg" alt="">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">PDF Editor</h3>
@@ -277,7 +312,7 @@
                 <div class="project-card">
                     <div class="project-image">
                         <span class="status-badge">In Progress</span>
-                        <img src="../Image/QnA.png" alt="QnA Game">
+                        <img src="/Image/QnA.png" alt="">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Q&A Game</h3>
@@ -317,7 +352,7 @@
                 <!-- Shop Application -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="../Image/shop.png" alt="Shop Application">
+                        <img src="/Image/shop.png" alt="">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Shop Application</h3>
@@ -353,7 +388,7 @@
                 <!-- Animation Page -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="../Image/Animation-site.png" alt="Animation Site">
+                        <img src="/Image/Animation-site.png" alt="">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Animation</h3>
@@ -388,7 +423,7 @@
                 <!-- Bootstrap Template -->
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="../Image/Bootstrap-site.png" alt="Bootstrap Template">
+                        <img src="/Image/Bootstrap-site.png" alt="">
                     </div>
                     <div class="project-content">
                         <h3 class="project-title">Bootstrap Template</h3>
@@ -419,6 +454,13 @@
                         </div>
                     </div>
                 </div>
+            </div>
+
+            <!-- Show More Button -->
+            <div class="show-more-container">
+                <button class="show-more-btn" id="showMoreBtn">
+                    <i class="fas fa-plus me-2"></i>Show More Projects
+                </button>
             </div>
         </div>
     </section>

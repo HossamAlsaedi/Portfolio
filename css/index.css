@@ -434,7 +434,7 @@
             }
         }
 
-        /* Portfolio Section */
+/* Portfolio Section */
         .portfolio-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -451,6 +451,13 @@
             transition: all 0.3s ease;
             border: 1px solid rgba(255, 255, 255, 0.2);
             height: fit-content;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .project-card.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
 
         .project-card:hover {
@@ -462,6 +469,7 @@
             height: 250px;
             overflow: hidden;
             position: relative;
+            background: #f8f9fa;
         }
 
         .project-image img {
@@ -591,6 +599,56 @@
             box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
         }
 
+        /* Show More Button */
+        .show-more-container {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .show-more-btn {
+            background: var(--success-gradient);
+            color: white;
+            border: none;
+            padding: 15px 40px;
+            border-radius: 30px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .show-more-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        }
+
+        .show-more-btn:active {
+            transform: translateY(-1px);
+        }
+
+        .show-more-btn.hidden {
+            display: none;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .portfolio-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+            
+            .project-card {
+                margin: 0 1rem;
+            }
+            
+            .section-title {
+                font-size: 2rem;
+            }
+        }
+
         /* Footer */
         .footer {
             background: rgba(255, 255, 255, 0.1);
@@ -677,5 +735,6 @@
 
             .project-links {
                 flex-direction: column;
+                text-align: center;
             }
         }
