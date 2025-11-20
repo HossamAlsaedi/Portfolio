@@ -5,7 +5,7 @@ let currentLang = 'en';
 // Load translations from JSON file
 async function loadTranslations() {
     try {
-        const response = await fetch('/Javascript/translation.json');
+        const response = await fetch('/Portfolio/Javascript/translation.json');
         translations = await response.json();
         
         // Load saved language preference or default to English
