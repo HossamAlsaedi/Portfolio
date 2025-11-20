@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/index.css">
-    <script src="../Javascript/index.js"></script>
     <title>Hossam Alsaedi - Portfolio</title>
 
 </head>
@@ -18,46 +17,76 @@
         <div class="floating-shape shape3"></div>
     </div>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg sticky-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">Portfolio</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#information">Info</a>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#" data-translate="portfolio">Portfolio</a>
+        
+        <!-- Add language dropdown button next to burger menu -->
+        <div class="d-flex gap-2">
+            <div class="dropdown d-lg-none">
+                <button class="lang-toggle-btn" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-globe"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end lang-dropdown">
+                    <li>
+                        <button class="dropdown-item lang-btn-mobile active" data-lang="en">
+                            <i class="fas fa-check"></i> English
+                        </button>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#skills">Skills</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    <li>
+                        <button class="dropdown-item lang-btn-mobile" data-lang="ar">
+                            <i class="fas fa-check"></i> العربية
+                        </button>
                     </li>
                 </ul>
             </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
         </div>
-    </nav>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#information" data-translate="nav_info">Info</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills" data-translate="nav_skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Certificates" data-translate="nav_certificates">Certificates</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio" data-translate="nav_portfolio">Portfolio</a>
+                </li>
+            </ul>
+            <!-- Language Switcher for desktop -->
+            <div class="language-switcher d-none d-lg-flex">
+                <button class="lang-btn active" data-lang="en">English</button>
+                <button class="lang-btn" data-lang="ar">العربية</button>
+            </div>
+        </div>
+    </div>
+</nav>
 
     <!-- About Section -->
     <section class="hero-section" id="information">
         <div class="container">
-            <div class="row justify-content-center">
+            <div class="row justify-content-center ">
                 <div class="col-lg-10">
                     <div class="hero-content">
-                        <h1 class="hero-title">Hossam Alsaedi</h1>
-                        <p class="hero-subtitle">IT & Web Developer</p>
-                            <p class="hero-description">
-                                I’m someone who enjoys working with technology, whether it’s building simple web projects or solving everyday computer issues.
-                                I’m comfortable with Microsoft Office, web development basics, and using AI tools to make my work more efficient.
-                                I’m currently improving my IT skills through continuous learning and preparing for recognized certifications to grow in the tech field.
-                                My goal is to keep developing myself and eventually work in a role where I can apply and expand these skills.
-                            </p>
+                        <h1 class="hero-title" data-translate="name_title">Hossam Alsaedi</h1>
+                        <p class="hero-subtitle" data-translate="job_title">IT specialist & Web Developer</p>
+                        <p class="hero-description" data-translate="hero_description">
+                            I'm someone who enjoys working with technology, whether it's building simple web projects or solving everyday computer issues.
+                            I'm comfortable with Microsoft Office, web development basics, and using AI tools to make my work more efficient.
+                            I'm currently improving my IT skills through continuous learning and preparing for recognized certifications to grow in the tech field.
+                            My goal is to keep developing myself and eventually work in a role where I can apply and expand these skills.
+                        </p>
                         <div class="contact-buttons">
                             <a href="mailto:hossamsalsaedi@gmail.com" class="btn-gradient align-content-center">
-                                <i class="fas fa-envelope me-2"></i>Contact Me
+                                <i class="fas fa-envelope me-2"></i><span data-translate="contact_me">Contact Me</span>
                             </a>
                             <div class="social-links">
                                 <a href="https://github.com/HossamAlsaedi" target="_blank" class="social-link github">
@@ -77,59 +106,58 @@
     <!-- Skills Section -->
     <section class="section" id="skills">
         <div class="container">
-            <h2 class="section-title">Technical Skills & Certifications</h2>
+            <h2 class="section-title" data-translate="technical_skills">Technical Skills</h2>
             <div class="section-content">
                 <!-- IT Support Skills -->
-<div class="skills-category it">
-    <h5><i class="fas fa-tools me-2"></i>IT & Support Knowledge</h5>
-    <div class="skills-grid">
-        <div class="skill-card">
-            <i class="fa-solid fa-computer" style="color: #4facfe;"></i>
-            <span>Computer Setup & OS Installation</span>
-        </div>
-        <div class="skill-card">
-            <i class="fa-solid fa-plug" style="color: #43e97b;"></i>
-            <span>Device Configuration</span>
-        </div>
-        <div class="skill-card">
-            <i class="fa-solid fa-file-word" style="color: #2B579A;"></i>
-            <span>Microsoft Word</span>
-        </div>
-        <div class="skill-card">
-            <i class="fa-solid fa-file-powerpoint" style="color: #B7472A;"></i>
-            <span>Microsoft PowerPoint</span>
-        </div>
-        <div class="skill-card">
-            <i class="fa-solid fa-file-excel" style="color: #217346;"></i>
-            <span>Microsoft Excel</span>
-        </div>
-        <div class="skill-card">
-            <i class="fa-solid fa-terminal" style="color: #667eea;"></i>
-            <span>Windows CMD & PowerShell</span>
-        </div>
-        <div class="skill-card">
-            <i class="fa-solid fa-network-wired" style="color: #fa709a;"></i>
-            <span>Basic Networking & Troubleshooting</span>
-        </div>
-        <div class="skill-card">
-            <i class="fa-solid fa-user-cog" style="color: #764ba2;"></i>
-            <span>User Account Management</span>
-        </div>
-        <div class="skill-card">
-            <i class="fa-solid fa-server" style="color: #f7971e;"></i>
-            <span>Cloud & Oracle OCI Basics</span>
-        </div>
-        <div class="skill-card">
-            <i class="fa-solid fa-brain" style="color: #ff9800;"></i>
-            <span>AI Tools & Automation</span>
-        </div>
-    </div>
-</div>
-
+                <div class="skills-category it">
+                    <h5><i class="fas fa-tools me-2"></i><span data-translate="it_support">IT & Support Knowledge</span></h5>
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <i class="fa-solid fa-computer" style="color: #4facfe;"></i>
+                            <span data-translate="skill_computer_setup">Computer Setup & OS Installation</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-plug" style="color: #43e97b;"></i>
+                            <span data-translate="skill_device_config">Device Configuration</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-file-word" style="color: #2B579A;" ></i>
+                            <span data-translate="ms_word">Microsoft Word</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-file-powerpoint" style="color: #B7472A;" ></i>
+                            <span data-translate="ms_powerpoint">Microsoft PowerPoint</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-file-excel" style="color: #217346;" ></i>
+                            <span data-translate="ms_excel">Microsoft Excel</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-terminal" style="color: #667eea;" ></i>
+                            <span data-translate="cmd">Windows CMD & PowerShell</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-network-wired" style="color: #fa709a;"></i>
+                            <span data-translate="skill_networking">Basic Networking & Troubleshooting</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-user-cog" style="color: #764ba2;"></i>
+                            <span data-translate="skill_user_management">User Account Management</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-server" style="color: #f7971e;"></i>
+                            <span data-translate="skill_cloud">Cloud & Oracle OCI Basics</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-brain" style="color: #ff9800;"></i>
+                            <span data-translate="skill_ai">AI Tools & Automation</span>
+                        </div>
+                    </div>
+                </div>
 
                 <!-- Web Development Skills -->
                 <div class="skills-category web">
-                    <h5><i class="fas fa-code me-2"></i>Web Development</h5>
+                    <h5><i class="fas fa-code me-2"></i><span data-translate="web_development">Web Development</span></h5>
                     <div class="skills-grid">
                         <div class="skill-card">
                             <i class="fa-brands fa-html5" style="color: #e34f26;"></i>
@@ -149,7 +177,7 @@
                         </div>
                         <div class="skill-card">
                             <i class="fa-solid fa-mobile-screen-button" style="color: #43e97b;"></i>
-                            <span>Responsive Design</span>
+                            <span data-translate="skill_responsive">Responsive Design</span>
                         </div>
                         <div class="skill-card">
                             <i class="fa-brands fa-github" style="color: #333;"></i>
@@ -161,178 +189,184 @@
                         </div>
                     </div>
                 </div>
-
-
+            </div>
+        </div>
+    </section>
+    
+    <!-- Certificates Section -->
+    <section class="section" id="Certificates">
+        <div class="container">
+            <h2 class="section-title" data-translate="certifications">Certifications</h2>
+            <div class="section-content">
                 <!-- Professional Certifications -->
                 <div class="skills-category cert">
-                    <h5><i class="fas fa-certificate me-2"></i>Professional Certifications</h5>
+                    <h5><i class="fas fa-certificate me-2"></i><span data-translate="professional_certs">Professional Certifications</span></h5>
                     <div class="skills-grid">
                         <div class="skill-card">
                             <i class="fa-solid fa-certificate" style="color: #4285f4;"></i>
-                            <div class="cert-name">Google IT Support Professional</div>
-                            <div class="cert-status completed">Completed</div>
-                            <div class="cert-date">Earned: Jul 2025</div>
+                            <div class="cert-name"data-translate="google_cert">Google IT Support Professional</div>
+                            <div class="cert-status completed" data-translate="status_completed">Completed</div>
+                            <div class="cert-date" data-translate="earned_jul_2025">Earned: Jul 2025</div>
                             <div class="cert-buttons">
                                 <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/8UJ2Q0NMK5UI" target="_blank" class="cert-btn verify">
-                                    <i class="fas fa-shield-check"></i> Verify
+                                    <i class="fas fa-shield-check"></i> <span data-translate="verify">Verify</span>
                                 </a>
                                 <a href="https://www.coursera.org/professional-certificates/google-it-support" target="_blank" class="cert-btn about">
-                                    <i class="fas fa-info-circle"></i> About
+                                    <i class="fas fa-info-circle"></i> <span data-translate="about">About</span>
                                 </a>
                             </div>
                         </div>
 
                         <div class="skill-card">
                             <i class="fa-solid fa-check-circle" style="color: #43e97b;"></i>
-                            <div class="cert-name">CompTIA A+ Core 1</div>
-                            <div class="cert-status completed">Passed</div>
-                            <div class="cert-date">Earned: Oct 2025</div>
+                            <div class="cert-name" data-translate="comptia_1">CompTIA A+ Core 1</div>
+                            <div class="cert-status completed" data-translate="status_passed">Passed</div>
+                            <div class="cert-date" data-translate="earned_oct_2025">Earned: Oct 2025</div>
                             <div class="cert-buttons">
                                 <a href="https://www.comptia.org/certifications/a" target="_blank" class="cert-btn about">
-                                    <i class="fas fa-info-circle"></i> About
+                                    <i class="fas fa-info-circle"></i> <span data-translate="about">About</span>
                                 </a>
                             </div>
                         </div>
 
                         <div class="skill-card">
                             <i class="fa-solid fa-pause-circle" style="color: #a8a8a8;"></i>
-                            <div class="cert-name">CompTIA A+ Core 2</div>
-                            <div class="cert-status on-hold">On Hold</div>
+                            <div class="cert-name" data-translate="comptia_2">CompTIA A+ Core 2</div>
+                            <div class="cert-status on-hold" data-translate="status_on_hold">On Hold</div>
                             <div class="cert-buttons">
                                 <button class="cert-btn verify disabled">
-                                    <i class="fas fa-pause"></i> Paused
+                                    <i class="fas fa-pause"></i> <span data-translate="paused">Paused</span>
                                 </button>
                                 <a href="https://www.comptia.org/en/certifications/a/core-2-v15/" target="_blank" class="cert-btn about">
-                                    <i class="fas fa-info-circle"></i> About
+                                    <i class="fas fa-info-circle"></i> <span data-translate="about">About</span>
                                 </a>
                             </div>
                         </div>
 
                         <div class="skill-card">
                             <i class="fa-solid fa-layer-group" style="color: #845ec2;"></i>
-                            <div class="cert-name">ITIL 4 Foundation</div>
-                            <div class="cert-status on-hold">Planned</div>
+                            <div class="cert-name" data-translate="ITIL">ITIL 4 Foundation</div>
+                            <div class="cert-status on-hold" data-translate="status_planned">Planned</div>
                             <div class="cert-buttons">
                                 <button class="cert-btn verify disabled">
-                                    <i class="fas fa-calendar-plus"></i> Planned
+                                    <i class="fas fa-calendar-plus"></i> <span data-translate="planned">Planned</span>
                                 </button>
                                 <a href="https://www.axelos.com/certifications/itil-service-management/itil-4-foundation" target="_blank" class="cert-btn about">
-                                    <i class="fas fa-info-circle"></i> About
+                                    <i class="fas fa-info-circle"></i> <span data-translate="about">About</span>
                                 </a>
                             </div>
                         </div>
                     </div>
                 </div>
 
-
                 <!-- Mostaqbali Program -->
                 <div class="skills-category cert">
-                    <h5><i class="fas fa-graduation-cap me-2"></i>Mostaqbali Program - MCIT</h5>
+                    <h5><i class="fas fa-graduation-cap me-2"></i><span data-translate="mostaqbali_program">Mostaqbali Program - MCIT</span></h5>
                     <div class="program-highlight">
-                        <h6><i class="fas fa-star me-2"></i>Current Focus</h6>
-                        <p>Ministry of Communication and Information Technology Training Program</p>
+                        <h6><i class="fas fa-star me-2"></i><span data-translate="current_focus">Current Focus</span></h6>
+                        <p data-translate="mcit_description">Ministry of Communication and Information Technology Training Program</p>
                     </div>
                     <div class="skills-grid">
                         <div class="skill-card">
                             <i class="fa-solid fa-certificate" style="color: #4285f4;"></i>
-                            <div class="cert-name">OCI Foundation Associate</div>
-                            <div class="cert-status completed">Completed</div>
-                            <div class="cert-date">Earned: Nov 2025</div>
+                            <div class="cert-name" data-translate="oci_foundation">OCI Foundation Associate</div>
+                            <div class="cert-status completed" data-translate="status_completed">Completed</div>
+                            <div class="cert-date" data-translate="earned_nov_2025">Earned: Nov 2025</div>
                             <div class="cert-buttons">
                                 <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=ACAC0C7A9C4B9C7064E15DD0BECFA4AF161BFF6434D93BB7B1C9682061EAF128" target="_blank" class="cert-btn verify">
-                                    <i class="fas fa-shield-check"></i> Verify Badge
+                                    <i class="fas fa-shield-check"></i> <span data-translate="verify_badge">Verify Badge</span>
                                 </a>
                                 <a href="https://education.oracle.com/oracle-cloud-infrastructure-2024-foundations-associate/pexam_1Z0-1085-25" target="_blank" class="cert-btn about">
-                                    <i class="fas fa-info-circle"></i> About
+                                    <i class="fas fa-info-circle"></i> <span data-translate="about">About</span>
                                 </a>
                             </div>
                         </div>
 
                         <div class="skill-card">
                             <i class="fa-solid fa-database" style="color: #4285f4;"></i>
-                            <div class="cert-name">Oracle Cloud Data Foundations Associate</div>
-                            <div class="cert-status in-progress">In Progress</div>
-                            <div class="cert-date">Currently Working On</div>
+                            <div class="cert-name"data-translate="oci_data">Oracle Cloud Data Foundations Associate</div>
+                            <div class="cert-status in-progress" data-translate="status_in_progress">In Progress</div>
+                            <div class="cert-date" data-translate="currently_working">Currently Working On</div>
                             <div class="cert-buttons">
                                 <button class="cert-btn verify disabled">
-                                    <i class="fas fa-clock"></i> In Progress
+                                    <i class="fas fa-clock"></i> <span data-translate="in_progress">In Progress</span>
                                 </button>
                                 <a href="https://education.oracle.com/oracle-cloud-infrastructure-2024-data-foundation-associate/pexam_1Z0-1195-25" target="_blank" class="cert-btn about">
-                                    <i class="fas fa-info-circle"></i> About
+                                    <i class="fas fa-info-circle"></i> <span data-translate="about">About</span>
                                 </a>
                             </div>
                         </div>
 
                         <div class="skill-card">
                             <i class="fa-solid fa-brain" style="color: #ff9800;"></i>
-                            <div class="cert-name">OCI AI Foundations Associate</div>
-                            <div class="cert-status planned">Coming Soon</div>
+                            <div class="cert-name" data-translate="oci_ai">OCI AI Foundations Associate</div>
+                            <div class="cert-status planned" data-translate="status_coming_soon">Coming Soon</div>
                             <div class="cert-buttons">
                                 <button class="cert-btn verify disabled">
-                                    <i class="fas fa-hourglass-half"></i> Soon
+                                    <i class="fas fa-hourglass-half"></i> <span data-translate="soon">Soon</span>
                                 </button>
                                 <a href="https://education.oracle.com/oracle-cloud-infrastructure-2024-ai-foundations-associate/pexam_1Z0-1122-25" target="_blank" class="cert-btn about">
-                                    <i class="fas fa-info-circle"></i> About
+                                    <i class="fas fa-info-circle"></i> <span data-translate="about">About</span>
                                 </a>
                             </div>
                         </div>
 
                         <div class="skill-card">
                             <i class="fa-solid fa-users" style="color: #34A853;"></i>
-                            <div class="cert-name">Oracle Fusion Cloud HCM Process Essentials</div>
-                            <div class="cert-status planned">Coming Soon</div>
-                            <div class="cert-date">Human Capital Management</div>
+                            <div class="cert-name" data-translate="oci_hcm">Oracle Fusion Cloud HCM Process Essentials</div>
+                            <div class="cert-status planned" data-translate="status_coming_soon">Coming Soon</div>
+                            <div class="cert-date" data-translate="hcm">Human Capital Management</div>
                             <div class="cert-buttons">
                                 <button class="cert-btn verify disabled">
-                                    <i class="fas fa-hourglass-half"></i> Soon
+                                    <i class="fas fa-hourglass-half"></i> <span data-translate="soon">Soon</span>
                                 </button>
                                 <a href="https://education.oracle.com/oracle-fusion-cloud-applications-hcm-foundations-associate-rel1/pexam_1Z0-1162-1" target="_blank" class="cert-btn about">
-                                    <i class="fas fa-info-circle"></i> About
+                                    <i class="fas fa-info-circle"></i> <span data-translate="about">About</span>
                                 </a>
                             </div>
                         </div>
 
                         <div class="skill-card">
                             <i class="fa-solid fa-chart-line" style="color: #EA4335;"></i>
-                            <div class="cert-name">Oracle Fusion Cloud ERP Process Essentials</div>
-                            <div class="cert-status planned">Coming Soon</div>
-                            <div class="cert-date">Enterprise Resource Planning</div>
+                            <div class="cert-name" data-translate="oci_erp">Oracle Fusion Cloud ERP Process Essentials</div>
+                            <div class="cert-status planned" data-translate="status_coming_soon">Coming Soon</div>
+                            <div class="cert-date" data-translate="erp">Enterprise Resource Planning</div>
                             <div class="cert-buttons">
                                 <button class="cert-btn verify disabled">
-                                    <i class="fas fa-hourglass-half"></i> Soon
+                                    <i class="fas fa-hourglass-half"></i> <span data-translate="soon">Soon</span>
                                 </button>
                                 <a href="https://education.oracle.com/oracle-fusion-cloud-applications-erp-foundations-associate-rel1/pexam_1Z0-1160-1" target="_blank" class="cert-btn about">
-                                    <i class="fas fa-info-circle"></i> About
+                                    <i class="fas fa-info-circle"></i> <span data-translate="about">About</span>
                                 </a>
                             </div>
                         </div>
 
                         <div class="skill-card">
                             <i class="fa-solid fa-handshake" style="color: #FBBC04;"></i>
-                            <div class="cert-name">Oracle Fusion Cloud CX Process Essentials</div>
-                            <div class="cert-status planned">Coming Soon</div>
-                            <div class="cert-date">Customer Experience</div>
+                            <div class="cert-name" data-translate="oci_cx">Oracle Fusion Cloud CX Process Essentials</div>
+                            <div class="cert-status planned" data-translate="status_coming_soon">Coming Soon</div>
+                            <div class="cert-date" data-translate="cx">Customer Experience</div>
                             <div class="cert-buttons">
                                 <button class="cert-btn verify disabled">
-                                    <i class="fas fa-hourglass-half"></i> Soon
+                                    <i class="fas fa-hourglass-half"></i> <span data-translate="soon">Soon</span>
                                 </button>
                                 <a href="https://education.oracle.com/oracle-fusion-cloud-applications-cx-foundations-associate-rel1/pexam_1Z0-1161-1" target="_blank" class="cert-btn about">
-                                    <i class="fas fa-info-circle"></i> About
+                                    <i class="fas fa-info-circle"></i> <span data-translate="about">About</span>
                                 </a>
                             </div>
                         </div>
 
                         <div class="skill-card">
                             <i class="fa-solid fa-truck" style="color: #764ba2;"></i>
-                            <div class="cert-name">Oracle Fusion Cloud SCM Process Essentials</div>
-                            <div class="cert-status planned">Coming Soon</div>
-                            <div class="cert-date">Supply Chain Management</div>
+                            <div class="cert-name" data-translate="oci_scm">Oracle Fusion Cloud SCM Process Essentials</div>
+                            <div class="cert-status planned" data-translate="status_coming_soon">Coming Soon</div>
+                            <div class="cert-date" data-translate="scm">Supply Chain Management</div>
                             <div class="cert-buttons">
                                 <button class="cert-btn verify disabled">
-                                    <i class="fas fa-hourglass-half"></i> Soon
+                                    <i class="fas fa-hourglass-half"></i> <span data-translate="soon">Soon</span>
                                 </button>
                                 <a href="https://education.oracle.com/oracle-fusion-cloud-applications-scm-foundations-associate-rel1/pexam_1Z0-1163-1" target="_blank" class="cert-btn about">
-                                    <i class="fas fa-info-circle"></i> About
+                                    <i class="fas fa-info-circle"></i> <span data-translate="about">About</span>
                                 </a>
                             </div>
                         </div>
@@ -342,43 +376,43 @@
         </div>
     </section>
 
-<!-- Portfolio Section -->
+    <!-- Portfolio Section -->
     <section class="section" id="portfolio">
         <div class="container">
-            <h2 class="section-title">My Projects</h2>
+            <h2 class="section-title" data-translate="my_projects">My Projects</h2>
             <div class="portfolio-grid" id="portfolioGrid">
 
                 <!-- QR Reader -->
                 <div class="project-card">
                     <div class="project-image">
                         <img src="/Image/QR-reader.jpg" alt="QR Reader Project" 
-                        onerror="this.src='https:\/\/raw.githubusercontent.com\/HossamAlsaedi\/Portfolio\/main\/Image\/QR-reader.jpg'">
+                        onerror="this.src='https:/\/raw.githubusercontent.com/HossamAlsaedi/Portfolio/main/Image/QR-reader.jpg'">
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">QR Reader</h3>
+                        <h3 class="project-title" data-translate="qr_title">QR Reader</h3>
                         <div class="tech-stack">
                             <i class="fa-brands fa-html5" style="color: #e34f26;"></i>
                             <i class="fa-brands fa-css3-alt" style="color: #1572b6;"></i>
                             <i class="fa-brands fa-js" style="color: #f7df1e;"></i>
                         </div>
                         <p class="project-description">
-                            <strong>Why I built this:</strong> 
-                            Most QR code readers rely on a camera or online tools, which isn't always practical or secure.
-                            I needed a quick way to scan QR codes from images on my desktop — so I built a private, lightweight tool that works offline without uploading anything.
+                            <strong data-translate="why_built">Why I built this:</strong> 
+                            <span data-translate="qr_description">Most QR code readers rely on a camera or online tools, which isn't always practical or secure.
+                            I needed a quick way to scan QR codes from images on my desktop — so I built a private, lightweight tool that works offline without uploading anything.</span>
                         </p>
                         <div class="project-features">
-                            <h6>Features:</h6>
+                            <h6 data-translate="features">Features:</h6>
                             <ul class="features-list">
-                                <li>Reading QR code</li>
-                                <li>Responsive Design</li>
+                                <li data-translate="feature_reading_qr">Reading QR code</li>
+                                <li data-translate="feature_responsive">Responsive Design</li>
                             </ul>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/HossamAlsaedi/QR-reader" target="_blank" class="project-link code">
-                                <i class="fab fa-github me-2"></i>View Code
+                                <i class="fab fa-github me-2"></i><span data-translate="view_code">View Code</span>
                             </a>
                             <a href="https://hossamalsaedi.github.io/QR-reader/" target="_blank" class="project-link demo">
-                                <i class="fas fa-external-link-alt me-2"></i>Live Demo
+                                <i class="fas fa-external-link-alt me-2"></i><span data-translate="live_demo">Live Demo</span>
                             </a>
                         </div>
                     </div>
@@ -388,114 +422,112 @@
                 <div class="project-card">
                     <div class="project-image">
                         <img src="/Image/pdf-editor.jpg" alt="PDF Editor Project"
-                        onerror="this.src='https:\/\/raw.githubusercontent.com\/HossamAlsaedi\/Portfolio\/main\/Image\/pdf-editor.jpg'">
+                        onerror="this.src='https:/\/raw.githubusercontent.com/HossamAlsaedi/Portfolio/main/Image/pdf-editor.jpg'">
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">PDF Editor</h3>
+                        <h3 class="project-title" data-translate="pdf_title">PDF Editor</h3>
                         <div class="tech-stack">
                             <i class="fa-brands fa-html5" style="color: #e34f26;"></i>
                             <i class="fa-brands fa-css3-alt" style="color: #1572b6;"></i>
                             <i class="fa-brands fa-js" style="color: #f7df1e;"></i>
                         </div>
                         <p class="project-description">
-                            <strong>Why I built this:</strong> Most free PDF tools are limited or require sketchy software — so I created a clean, browser-based solution. Lightweight editor for combining, splitting, and converting PDFs without uploading sensitive documents online.
+                            <strong data-translate="why_built">Why I built this:</strong> 
+                            <span data-translate="pdf_description">Most free PDF tools are limited or require sketchy software — so I created a clean, browser-based solution. Lightweight editor for combining, splitting, and converting PDFs without uploading sensitive documents online.</span>
                         </p>
                         <div class="project-features">
-                            <h6>Features:</h6>
+                            <h6 data-translate="features">Features:</h6>
                             <ul class="features-list">
-                                <li>Responsive Design</li>
-                                <li>Merging Pages</li>
-                                <li>Merging Files</li>
-                                <li>Convert Image to PDF</li>
-                                <li>Rearrange Pages</li>
-                                <li>Split PDF Pages</li>
+                                <li data-translate="feature_responsive">Responsive Design</li>
+                                <li data-translate="feature_merge_pages">Merging Pages</li>
+                                <li data-translate="feature_merge_files">Merging Files</li>
+                                <li data-translate="feature_convert_img">Convert Image to PDF</li>
+                                <li data-translate="feature_rearrange">Rearrange Pages</li>
+                                <li data-translate="feature_split">Split PDF Pages</li>
                             </ul>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/HossamAlsaedi/PDF-Editor" target="_blank" class="project-link code">
-                                <i class="fab fa-github me-2"></i>View Code
+                                <i class="fab fa-github me-2"></i><span data-translate="view_code">View Code</span>
                             </a>
                             <a href="https://hossamalsaedi.github.io/PDF-Editor/" target="_blank" class="project-link demo">
-                                <i class="fas fa-external-link-alt me-2"></i>Live Demo
+                                <i class="fas fa-external-link-alt me-2"></i><span data-translate="live_demo">Live Demo</span>
                             </a>
                         </div>
                     </div>
                 </div>
 
                 <!-- QnA Game -->
-                <div class="project-card">
-                    <div class="project-image">
-                        <span class="status-badge">In Progress</span>
-                        <img src="/Image/QnA.png" alt="Q&A Game Project"
-                        onerror="this.src='https:\/\/raw.githubusercontent.com\/HossamAlsaedi\/Portfolio\/main\/Image\/QnA.png'">
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Q&A Game</h3>
-                        <div class="tech-stack">
-                            <i class="fa-brands fa-html5" style="color: #e34f26;"></i>
-                            <i class="fa-brands fa-css3-alt" style="color: #1572b6;"></i>
-                            <i class="fa-brands fa-js" style="color: #f7df1e;"></i>
-                            <i class="fa-brands fa-vuejs" style="color: #42b883;"></i>
-                            <i class="fa-brands fa-bootstrap" style="color: #712cf9;"></i>
-                        </div>
-                        <p class="project-description">
-                            <strong>Why I built this:</strong> I noticed my friends were paying for limited quiz games online — so I built a free, customizable alternative that we could use together. This web-based quiz game allows multiplayer interaction with custom team management, question categories, and scoring.
-                        </p>
-                        <div class="project-features">
-                            <h6>Features:</h6>
-                            <ul class="features-list">
-                                <li>Responsive Design</li>
-                                <li>Team Management</li>
-                                <li>Team Abilities</li>
-                                <li>Multiple Categories</li>
-                                <li>Save Game</li>
-                                <li>Points System</li>
-                                <li>Animations</li>
-                            </ul>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/HossamAlsaedi/QnA_Game/tree/master" target="_blank" class="project-link code">
-                                <i class="fab fa-github me-2"></i>View Code
-                            </a>
-                            <a href="https://hossamalsaedi.github.io/QnA_Game/#/" target="_blank" class="project-link demo">
-                                <i class="fas fa-external-link-alt me-2"></i>Live Demo
-                            </a>
-                        </div>
-                    </div>
-                </div>
+<div class="project-card">
+    <div class="project-image">
+        <span class="status-badge" data-translate="in_progress">In Progress</span>
+        <img src="/Image/QnA.png" alt="Q&A Game Project"
+        onerror="this.src='https:/\/raw.githubusercontent.com/HossamAlsaedi/Portfolio/main/Image/QnA.png'">
+    </div>
+    <div class="project-content">
+        <h3 class="project-title" data-translate="qna_title">Q&A Game</h3>
+        <div class="tech-stack">
+            <!-- icons -->
+        </div>
+        <p class="project-description">
+            <strong data-translate="why_built">Why I built this:</strong> 
+            <span data-translate="qna_description">I noticed my friends were paying for limited quiz games online — so I built a free, customizable alternative that we could use together. This web-based quiz game allows multiplayer interaction with custom team management, question categories, and scoring.</span>
+        </p>
+        <div class="project-features">
+            <h6 data-translate="features">Features:</h6>
+            <ul class="features-list">
+                <li data-translate="feature_responsive">Responsive Design</li>
+                <li data-translate="feature_team_mgmt">Team Management</li>
+                <li data-translate="feature_team_abilities">Team Abilities</li>
+                <li data-translate="feature_categories">Multiple Categories</li>
+                <li data-translate="feature_save_game">Save Game</li>
+                <li data-translate="feature_points">Points System</li>
+                <li data-translate="feature_animations">Animations</li>
+            </ul>
+        </div>
+        <div class="project-links">
+            <a href="https://github.com/HossamAlsaedi/QnA_Game/tree/master" target="_blank" class="project-link code">
+                <i class="fab fa-github me-2"></i><span data-translate="view_code">View Code</span>
+            </a>
+            <a href="https://hossamalsaedi.github.io/QnA_Game/#/" target="_blank" class="project-link demo">
+                <i class="fas fa-external-link-alt me-2"></i><span data-translate="live_demo">Live Demo</span>
+            </a>
+        </div>
+    </div>
+</div>
 
                 <!-- Shop Application -->
                 <div class="project-card">
                     <div class="project-image">
                         <img src="/Image/shop.png" alt="Shop Application Project"
-                        onerror="this.src='https:\/\/raw.githubusercontent.com\/HossamAlsaedi\/Portfolio\/main\/Image\/shop.png'">
+                        onerror="this.src='https:/\/raw.githubusercontent.com/HossamAlsaedi/Portfolio/main/Image/shop.png'">
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Shop Application</h3>
+                        <h3 class="project-title" data-translate="shop_title">Shop Application</h3>
                         <div class="tech-stack">
                             <i class="fa-brands fa-html5" style="color: #e34f26;"></i>
                             <i class="fa-brands fa-css3-alt" style="color: #1572b6;"></i>
                             <i class="fa-brands fa-js" style="color: #f7df1e;"></i>
                         </div>
-                        <p class="project-description">
+                        <p class="project-description" data-translate="shop_description">
                             A complete e-commerce solution with product management, user accounts, and shopping cart functionality. Features currency conversion and responsive design.
                         </p>
                         <div class="project-features">
-                            <h6>Features:</h6>
+                            <h6 data-translate="features">Features:</h6>
                             <ul class="features-list">
-                                <li>Responsive Design</li>
-                                <li>Product Management</li>
-                                <li>Account Management</li>
-                                <li>Cart Management</li>
-                                <li>Currency API</li>
+                                <li data-translate="feature_responsive">Responsive Design</li>
+                                <li data-translate="feature_product_mgmt">Product Management</li>
+                                <li data-translate="feature_account_mgmt">Account Management</li>
+                                <li data-translate="feature_cart_mgmt">Cart Management</li>
+                                <li data-translate="feature_currency">Currency API</li>
                             </ul>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/HossamAlsaedi/Shop-Application" target="_blank" class="project-link code">
-                                <i class="fab fa-github me-2"></i>View Code
+                                <i class="fab fa-github me-2"></i><span data-translate="view_code">View Code</span>
                             </a>
                             <a href="https://Hossamalsaedi.github.io/Shop-Application/html/" target="_blank" class="project-link demo">
-                                <i class="fas fa-external-link-alt me-2"></i>Live Demo
+                                <i class="fas fa-external-link-alt me-2"></i><span data-translate="live_demo">Live Demo</span>
                             </a>
                         </div>
                     </div>
@@ -505,33 +537,32 @@
                 <div class="project-card">
                     <div class="project-image">
                         <img src="/Image/Animation-site.png" alt="Animation Project"
-                        onerror="this.src='https:\/\/raw.githubusercontent.com\/HossamAlsaedi\/Portfolio\/main\/Image\/Animation-site.png'">
+                        onerror="this.src='https:/\/raw.githubusercontent.com/HossamAlsaedi/Portfolio/main/Image/Animation-site.png'">
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Animation</h3>
+                        <h3 class="project-title" data-translate="animation_title">Animation</h3>
                         <div class="tech-stack">
                             <i class="fa-brands fa-html5" style="color: #e34f26;"></i>
                             <i class="fa-brands fa-css3-alt" style="color: #1572b6;"></i>
                             <i class="fa-brands fa-js" style="color: #f7df1e;"></i>
                         </div>
-                        <p class="project-description">
+                        <p class="project-description" data-translate="animation_description">
                             A showcase of modern CSS animations and JavaScript effects. Features smooth transitions, hover animations, and scroll-triggered effects.
                         </p>
                         <div class="project-features">
-                            <h6>Features:</h6>
+                            <h6 data-translate="features">Features:</h6>
                             <ul class="features-list">
-                                <li>Responsive Design</li>
-                                <li>Hover Animations</li>
-                                <li>Scroll-triggered Progress</li>
-                                <li>Smooth Transitions</li>
+                                <li data-translate="feature_responsive">Responsive Design</li>
+                                <li data-translate="feature_hover">Hover Animations</li>
+                                <li data-translate="feature_scroll">Scroll-triggered Progress</li>
                             </ul>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/HossamAlsaedi/Animation" target="_blank" class="project-link code">
-                                <i class="fab fa-github me-2"></i>View Code
+                                <i class="fab fa-github me-2"></i><span data-translate="view_code">View Code</span>
                             </a>
                             <a href="https://Hossamalsaedi.github.io/Animation/html/animation.html" target="_blank" class="project-link demo">
-                                <i class="fas fa-external-link-alt me-2"></i>Live Demo
+                                <i class="fas fa-external-link-alt me-2"></i><span data-translate="live_demo">Live Demo</span>
                             </a>
                         </div>
                     </div>
@@ -541,33 +572,32 @@
                 <div class="project-card">
                     <div class="project-image">
                         <img src="/Image/Bootstrap-site.png" alt="Bootstrap Template Project"
-                        onerror="this.src='https:\/\/raw.githubusercontent.com\/HossamAlsaedi\/Portfolio\/main\/Image\/Bootstrap-site.png'">
+                        onerror="this.src='https:/\/raw.githubusercontent.com/HossamAlsaedi/Portfolio/main/Image/Bootstrap-site.png'">
                     </div>
                     <div class="project-content">
-                        <h3 class="project-title">Bootstrap Template</h3>
+                        <h3 class="project-title" data-translate="bootstrap_title">Bootstrap Template</h3>
                         <div class="tech-stack">
                             <i class="fa-brands fa-bootstrap" style="color: #712cf9;"></i>
                             <i class="fa-brands fa-html5" style="color: #e34f26;"></i>
                             <i class="fa-brands fa-css3-alt" style="color: #1572b6;"></i>
                         </div>
-                        <p class="project-description">
+                        <p class="project-description" data-translate="bootstrap_description">
                             A modern, responsive website template built with Bootstrap. Features clean design, smooth animations, and mobile-first approach.
                         </p>
                         <div class="project-features">
-                            <h6>Features:</h6>
+                            <h6 data-translate="features">Features:</h6>
                             <ul class="features-list">
-                                <li>Responsive Design</li>
-                                <li>Bootstrap Components</li>
-                                <li>Hover Animations</li>
-                                <li>Clean Layout</li>
+                                <li data-translate="feature_responsive">Responsive Design</li>
+                                <li data-translate="feature_bootstrap">Bootstrap Components</li>
+                                <li data-translate="feature_hover">Hover Animations</li>
                             </ul>
                         </div>
                         <div class="project-links">
                             <a href="https://github.com/HossamAlsaedi/bootstrap_template" target="_blank" class="project-link code">
-                                <i class="fab fa-github me-2"></i>View Code
+                                <i class="fab fa-github me-2"></i><span data-translate="view_code">View Code</span>
                             </a>
                             <a href="https://Hossamalsaedi.github.io/bootstrap_template/html/bondi.html" target="_blank" class="project-link demo">
-                                <i class="fas fa-external-link-alt me-2"></i>Live Demo
+                                <i class="fas fa-external-link-alt me-2"></i><span data-translate="live_demo">Live Demo</span>
                             </a>
                         </div>
                     </div>
@@ -577,7 +607,9 @@
             <!-- Show More Button -->
             <div class="show-more-container">
                 <button class="show-more-btn" id="showMoreBtn">
-                    <i class="fas fa-plus me-2"></i>Show More Projects
+                    <i class="fas fa-plus me-2"></i>
+                    <span data-translate="show_more" id="showMoreText">Show More Projects</span>
+                    <span id="showMoreCount"></span>
                 </button>
             </div>
         </div>
@@ -586,7 +618,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>This page was made with the help of AI</p>
+            <p data-translate="footer_text">This page was made with the help of AI</p>
             <div class="footer-tech">
                 <i class="fa-brands fa-html5" style="color: #e34f26;"></i>
                 <i class="fa-brands fa-bootstrap" style="color: #712cf9;"></i>
@@ -597,6 +629,5 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="../Javascript/index.js"></script>
 </body>
-</html>
