@@ -29,7 +29,7 @@ function switchLanguage(lang) {
     document.querySelectorAll('[data-translate]').forEach(element => {
         const key = element.getAttribute('data-translate');
         if (translations[lang] && translations[lang][key]) {
-            element.textContent = translations[lang][key];
+            element.innerHTML = translations[lang][key];
         }
     });
     
